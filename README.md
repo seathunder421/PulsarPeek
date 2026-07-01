@@ -1,4 +1,4 @@
-# PulsarCatalogue 🌀
+# PulsarPeek 🌀
 
 **A macOS app for browsing, searching, and analyzing pulsar catalog data.**
 
