@@ -28,7 +28,7 @@ PulsarCatalogue 是一个专为脉冲星研究设计的 macOS 应用，提供直
 
 ## 下载
 
-请访问 [Releases 页面](https://github.com/seathunder421/PulsarCatalogue/releases) 下载最新版本。
+直接点击仓库根目录的 `PulsarCatalogue_v1.dmg` 下载。
 
 ## 版本历史
 
