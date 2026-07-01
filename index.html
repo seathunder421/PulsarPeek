@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PulsarPeek 🌀 - 脉冲星数据目录浏览器</title>
+  <title>PulsarPeek 🌀</title>
   <style>
     :root {
       --bg: #0b0e17;
@@ -22,10 +22,9 @@
       min-height: 100vh;
     }
 
-    /* Hero */
     .hero {
       text-align: center;
-      padding: 80px 20px 60px;
+      padding: 80px 20px 40px;
       background: linear-gradient(180deg, #0f172a 0%, var(--bg) 100%);
       position: relative;
       overflow: hidden;
@@ -48,9 +47,9 @@
     }
     .hero h1 span { background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     .hero .subtitle {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: var(--muted);
-      margin-top: 12px;
+      margin-top: 10px;
       position: relative;
     }
     .hero .badge {
@@ -61,13 +60,12 @@
       border-radius: 20px;
       font-size: 0.85rem;
       color: var(--accent);
-      margin-top: 20px;
+      margin-top: 18px;
     }
 
-    /* Download */
     .download-section {
       text-align: center;
-      padding: 40px 20px 60px;
+      padding: 32px 20px 50px;
     }
     .btn-download {
       display: inline-flex;
@@ -95,52 +93,36 @@
       opacity: 0.8;
     }
     .download-info {
-      margin-top: 12px;
+      margin-top: 10px;
       font-size: 0.85rem;
       color: var(--muted);
     }
 
-    /* Features */
     .features {
-      max-width: 900px;
+      max-width: 680px;
       margin: 0 auto;
-      padding: 40px 20px 60px;
-    }
-    .features h2 {
-      text-align: center;
-      font-size: 1.8rem;
-      margin-bottom: 40px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
+      padding: 10px 20px 60px;
     }
     .feature-card {
       background: var(--card);
       border: 1px solid #1e293b;
       border-radius: 14px;
-      padding: 28px;
+      padding: 32px;
+      text-align: center;
       transition: border-color 0.2s;
     }
     .feature-card:hover { border-color: var(--accent); }
-    .feature-card .icon { font-size: 2rem; margin-bottom: 12px; }
-    .feature-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
-    .feature-card p { color: var(--muted); font-size: 0.92rem; }
+    .feature-card .icon { font-size: 2.5rem; margin-bottom: 14px; }
+    .feature-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
+    .feature-card p { color: var(--muted); font-size: 0.95rem; max-width: 480px; margin: 0 auto; }
 
-    /* Requirements */
-    .requirements {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px 20px 60px;
-      text-align: center;
-    }
     .req-tags {
       display: flex;
       justify-content: center;
       gap: 12px;
       flex-wrap: wrap;
       margin-top: 16px;
+      padding: 10px 20px 50px;
     }
     .req-tag {
       padding: 8px 20px;
@@ -150,7 +132,6 @@
       font-size: 0.9rem;
     }
 
-    /* Footer */
     footer {
       text-align: center;
       padding: 30px 20px;
@@ -162,7 +143,7 @@
 
     @media (max-width: 640px) {
       .hero h1 { font-size: 2.2rem; }
-      .hero { padding: 50px 16px 40px; }
+      .hero { padding: 50px 16px 30px; }
     }
   </style>
 </head>
@@ -170,61 +151,31 @@
 
 <div class="hero">
   <h1><span>PulsarPeek</span> 🌀</h1>
-  <p class="subtitle">macOS 脉冲星数据目录浏览器</p>
+  <p class="subtitle">Pulsar Catalog Browser for macOS</p>
   <div class="badge">⚡ Browse · Search · Visualize</div>
 </div>
 
 <div class="download-section">
   <a href="PulsarPeek_v1.dmg" class="btn-download">
-    ⬇ 下载 PulsarPeek
+    ⬇ Download PulsarPeek
     <small>v1.0 · DMG</small>
   </a>
   <p class="download-info">macOS 11.0+ · Apple Silicon & Intel</p>
 </div>
 
 <div class="features">
-  <h2>✨ 功能特性</h2>
-  <div class="grid">
-    <div class="feature-card">
-      <div class="icon">📋</div>
-      <h3>Catalog Browser</h3>
-      <p>快速加载与浏览脉冲星星表数据，流畅分页导航</p>
-    </div>
-    <div class="feature-card">
-      <div class="icon">🔍</div>
-      <h3>Multi-dimensional Search</h3>
-      <p>按名称、周期、色散量等多维度筛选</p>
-    </div>
-    <div class="feature-card">
-      <div class="icon">📊</div>
-      <h3>Data Visualization</h3>
-      <p>关键参数分布图表，直观呈现</p>
-    </div>
-    <div class="feature-card">
-      <div class="icon">💾</div>
-      <h3>Local Caching</h3>
-      <p>离线可用，无需重复加载</p>
-    </div>
-    <div class="feature-card">
-      <div class="icon">⚡</div>
-      <h3>Performance Optimized</h3>
-      <p>针对大规模数据集深度优化</p>
-    </div>
-    <div class="feature-card">
-      <div class="icon">🖥️</div>
-      <h3>Native macOS App</h3>
-      <p>纯原生体验，支持 Apple Silicon & Intel</p>
-    </div>
+  <div class="feature-card">
+    <div class="icon">📊</div>
+    <h3>Data Visualization Made Simple</h3>
+    <p>Explore pulsar catalogs through interactive visualizations — parameter distributions, correlations, and multi-dimensional filtering at your fingertips.</p>
   </div>
 </div>
 
-<div class="requirements">
-  <h2>📦 系统要求</h2>
-  <div class="req-tags">
-    <span class="req-tag">macOS 11.0+</span>
-    <span class="req-tag">Apple Silicon</span>
-    <span class="req-tag">Intel</span>
-  </div>
+<div class="req-tags">
+  <span class="req-tag">macOS 11.0+</span>
+  <span class="req-tag">Apple Silicon</span>
+  <span class="req-tag">Intel</span>
+  <span class="req-tag">Open Source</span>
 </div>
 
 <footer>
