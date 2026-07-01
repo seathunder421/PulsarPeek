@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulsarPeek 🌀 - 脉冲星数据目录浏览器</title>
+  <style>
+    :root {
+      --bg: #0b0e17;
+      --card: #111827;
+      --accent: #60a5fa;
+      --accent2: #a78bfa;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 80px 20px 60px;
+      background: linear-gradient(180deg, #0f172a 0%, var(--bg) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(ellipse at 50% 30%, rgba(96,165,250,0.06) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      position: relative;
+    }
+    .hero h1 span { background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero .subtitle {
+      font-size: 1.2rem;
+      color: var(--muted);
+      margin-top: 12px;
+      position: relative;
+    }
+    .hero .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: rgba(96,165,250,0.1);
+      border: 1px solid rgba(96,165,250,0.3);
+      border-radius: 20px;
+      font-size: 0.85rem;
+      color: var(--accent);
+      margin-top: 20px;
+    }
+
+    /* Download */
+    .download-section {
+      text-align: center;
+      padding: 40px 20px 60px;
+    }
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 40px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff;
+      font-size: 1.15rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(96,165,250,0.3);
+    }
+    .btn-download:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(96,165,250,0.4);
+    }
+    .btn-download small {
+      font-size: 0.8rem;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+    .download-info {
+      margin-top: 12px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* Features */
+    .features {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+    .features h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .feature-card {
+      background: var(--card);
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      padding: 28px;
+      transition: border-color 0.2s;
+    }
+    .feature-card:hover { border-color: var(--accent); }
+    .feature-card .icon { font-size: 2rem; margin-bottom: 12px; }
+    .feature-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+    .feature-card p { color: var(--muted); font-size: 0.92rem; }
+
+    /* Requirements */
+    .requirements {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px 20px 60px;
+      text-align: center;
+    }
+    .req-tags {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+    .req-tag {
+      padding: 8px 20px;
+      background: var(--card);
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+      font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid #1e293b;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2.2rem; }
+      .hero { padding: 50px 16px 40px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <h1><span>PulsarPeek</span> 🌀</h1>
+  <p class="subtitle">macOS 脉冲星数据目录浏览器</p>
+  <div class="badge">⚡ Browse · Search · Visualize</div>
+</div>
+
+<div class="download-section">
+  <a href="PulsarCatalogue_v1.dmg" class="btn-download">
+    ⬇ 下载 PulsarPeek
+    <small>v1.0 · DMG</small>
+  </a>
+  <p class="download-info">macOS 11.0+ · Apple Silicon & Intel</p>
+</div>
+
+<div class="features">
+  <h2>✨ 功能特性</h2>
+  <div class="grid">
+    <div class="feature-card">
+      <div class="icon">📋</div>
+      <h3>Catalog Browser</h3>
+      <p>快速加载与浏览脉冲星星表数据，流畅分页导航</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">🔍</div>
+      <h3>Multi-dimensional Search</h3>
+      <p>按名称、周期、色散量等多维度筛选</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">📊</div>
+      <h3>Data Visualization</h3>
+      <p>关键参数分布图表，直观呈现</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">💾</div>
+      <h3>Local Caching</h3>
+      <p>离线可用，无需重复加载</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">⚡</div>
+      <h3>Performance Optimized</h3>
+      <p>针对大规模数据集深度优化</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">🖥️</div>
+      <h3>Native macOS App</h3>
+      <p>纯原生体验，支持 Apple Silicon & Intel</p>
+    </div>
+  </div>
+</div>
+
+<div class="requirements">
+  <h2>📦 系统要求</h2>
+  <div class="req-tags">
+    <span class="req-tag">macOS 11.0+</span>
+    <span class="req-tag">Apple Silicon</span>
+    <span class="req-tag">Intel</span>
+  </div>
+</div>
+
+<footer>
+  <a href="https://github.com/seathunder421/PulsarPeek">GitHub</a> ·
+  MIT License ·
+  Built with 🌀 for pulsar astronomers
+</footer>
+
+</body>
+</html>
