@@ -18,13 +18,13 @@
 
 ## Install
 
-1. Download `PulsarPeek.dmg` from repo root
+1. Download `PulsarPeek_v1.dmg` from repo root
 2. Open the DMG and drag to Applications
 3. Right-click → Open to bypass Gatekeeper on first launch
 
 ## Download
 
-[`PulsarPeek.dmg`](PulsarPeek.dmg) — directly from the repo root.
+[`PulsarPeek_v1.dmg`](PulsarPeek_v1.dmg) — directly from the repo root.
 
 ## Changelog
 
