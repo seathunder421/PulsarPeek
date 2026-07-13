@@ -241,6 +241,78 @@
       color: var(--accent);
     }
 
+    /* Install Guide */
+    .install-guide {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 20px 48px;
+    }
+    .install-guide h2 {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .install-card {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 28px;
+    }
+    .install-step {
+      display: flex;
+      gap: 16px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(30,41,59,0.6);
+      align-items: flex-start;
+    }
+    .install-step:last-child { border-bottom: none; }
+    .install-step .step-num {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #fff;
+      margin-top: 2px;
+    }
+    .install-step .step-text { flex: 1; min-width: 0; }
+    .install-step .step-text p { color: var(--muted); font-size: 0.88rem; line-height: 1.6; }
+    .install-step .step-text strong { color: var(--text); }
+    .security-warning {
+      margin-top: 16px;
+      background: rgba(244,114,182,0.06);
+      border: 1px solid rgba(244,114,182,0.2);
+      border-radius: 12px;
+      padding: 16px 20px;
+    }
+    .security-warning code {
+      color: var(--accent3);
+      font-size: 0.85rem;
+    }
+    .security-warning p {
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.6;
+      margin-top: 8px;
+    }
+    .security-warning p:first-child { margin-top: 0; }
+    .security-warning .tip {
+      display: inline-block;
+      background: rgba(96,165,250,0.1);
+      border: 1px solid rgba(96,165,250,0.2);
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 0.85rem;
+      color: var(--accent);
+      margin-top: 8px;
+    }
+
     /* Footer */
     footer {
       text-align: center;
@@ -302,6 +374,33 @@
     </div>
   </div>
 
+
+  <!-- Install Guide -->
+  <div class="install-guide">
+    <h2>📦 Install</h2>
+    <div class="install-card">
+      <div class="install-step">
+        <div class="step-num">1</div>
+        <div class="step-text"><p>Double-click the downloaded <strong>PulsarPeek_v2.dmg</strong></p></div>
+      </div>
+      <div class="install-step">
+        <div class="step-num">2</div>
+        <div class="step-text"><p>Drag <strong>PulsarPeek.app</strong> into the <strong>Applications</strong> folder</p></div>
+      </div>
+      <div class="install-step">
+        <div class="step-num">3</div>
+        <div class="step-text"><p>First launch will trigger a macOS security warning — see fix below</p></div>
+      </div>
+
+      <div class="security-warning">
+        <code>⚠️ "PulsarPeek" was blocked to protect your Mac</code>
+        <p>Since PulsarPeek is not Apple-notarized, macOS blocks the first launch. This is expected. Two ways to fix it:</p>
+        <p><strong>Option 1 (recommended):</strong> In Finder, <strong>right-click</strong> (or Ctrl+click) <code>PulsarPeek.app</code> → select <strong>Open</strong> → click <strong>Open</strong> in the confirmation dialog. It will run normally from then on.</p>
+        <p><strong>Option 2:</strong> System Settings → Privacy & Security → scroll down to the Security section → find "PulsarPeek was blocked" → click <strong>Open Anyway</strong> → enter your password.</p>
+        <div class="tip">✅ Only needed once — subsequent launches work with a normal double-click</div>
+      </div>
+    </div>
+  </div>
 
   <!-- Features -->
   <div class="features">

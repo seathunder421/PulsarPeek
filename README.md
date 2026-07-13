@@ -30,6 +30,18 @@ Runs as a native macOS desktop application — no browser needed, data cached lo
 
 [**Download PulsarPeek_v2.dmg**](https://github.com/seathunder421/PulsarPeek/raw/main/PulsarPeek_v2.dmg) — ~16 MB
 
+### 📦 Install
+
+1. Double-click the downloaded `PulsarPeek_v2.dmg`
+2. Drag `PulsarPeek.app` into the **Applications** folder
+3. First launch will trigger a macOS security warning:
+
+> **"PulsarPeek" was blocked to protect your Mac**
+
+**Fix** — Right-click (or Ctrl+click) `PulsarPeek.app` → select **Open** → click **Open** in the dialog. You only need to do this once.
+
+Alternatively: System Settings → Privacy & Security → scroll down to Security → find "PulsarPeek was blocked" → click **Open Anyway** → enter your password.
+
 ---
 
 ## 🔗 Links
