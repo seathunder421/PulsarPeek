@@ -30,11 +30,20 @@ Runs as a native macOS desktop application — no browser needed, data cached lo
 
 [**Download PulsarPeek_v2.dmg**](PulsarPeek_v2.dmg) — ~16 MB
 
-### Install
+### 📦 Install
 
 1. Download `PulsarPeek_v2.dmg`
-2. Open the DMG and drag `PulsarPeek.app` to Applications
-3. First launch: right-click → Open to bypass Gatekeeper
+2. 双击打开 DMG 文件
+3. 将 `PulsarPeek.app` 拖入 Applications 文件夹
+4. 首次打开会弹出 macOS 安全提示：
+
+> **"PulsarPeek" was blocked to protect your Mac**
+
+**解决方法**：右键（或按住 Ctrl 点击）`PulsarPeek.app` → 选择 **打开** → 在弹出的对话框里点击 **打开** 即可。
+
+或者：系统设置 → 隐私与安全性 → 找到 "PulsarPeek" 被阻止的提示 → 点击 **仍要打开**。
+
+只需操作一次，以后正常双击打开即可。
 
 ---
 

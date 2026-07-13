@@ -242,6 +242,78 @@
     }
 
     /* Changelog */
+    /* Install Guide */
+    .install-guide {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 20px 48px;
+    }
+    .install-guide h2 {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .install-card {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 28px;
+    }
+    .install-step {
+      display: flex;
+      gap: 16px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(30,41,59,0.6);
+      align-items: flex-start;
+    }
+    .install-step:last-child { border-bottom: none; }
+    .install-step .step-num {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #fff;
+      margin-top: 2px;
+    }
+    .install-step .step-text { flex: 1; min-width: 0; }
+    .install-step .step-text p { color: var(--muted); font-size: 0.88rem; line-height: 1.6; }
+    .install-step .step-text strong { color: var(--text); }
+    .security-warning {
+      margin-top: 16px;
+      background: rgba(244,114,182,0.06);
+      border: 1px solid rgba(244,114,182,0.2);
+      border-radius: 12px;
+      padding: 16px 20px;
+    }
+    .security-warning code {
+      color: var(--accent3);
+      font-size: 0.85rem;
+    }
+    .security-warning p {
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.6;
+      margin-top: 8px;
+    }
+    .security-warning p:first-child { margin-top: 0; }
+    .security-warning .tip {
+      display: inline-block;
+      background: rgba(96,165,250,0.1);
+      border: 1px solid rgba(96,165,250,0.2);
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 0.85rem;
+      color: var(--accent);
+      margin-top: 8px;
+    }
+
     .changelog {
       max-width: 640px;
       margin: 0 auto;
@@ -350,6 +422,33 @@
       <span>🍎 macOS 11+</span>
       <span>🔩 Apple Silicon / Intel</span>
       <span>🌐 Native · Offline Ready</span>
+    </div>
+  </div>
+
+  <!-- Install Guide -->
+  <div class="install-guide">
+    <h2>📦 Install</h2>
+    <div class="install-card">
+      <div class="install-step">
+        <div class="step-num">1</div>
+        <div class="step-text"><p>点击上方按钮下载 <strong>PulsarPeek_v2.dmg</strong></p></div>
+      </div>
+      <div class="install-step">
+        <div class="step-num">2</div>
+        <div class="step-text"><p>双击打开 DMG 文件，将 <strong>PulsarPeek.app</strong> 拖入 Applications 文件夹</p></div>
+      </div>
+      <div class="install-step">
+        <div class="step-num">3</div>
+        <div class="step-text"><p>首次启动会触发 macOS 安全提示，按下方方法解决</p></div>
+      </div>
+
+      <div class="security-warning">
+        <code>⚠️ "PulsarPeek" was blocked to protect your Mac</code>
+        <p>由于 PulsarPeek 尚未通过 Apple 公证，macOS 会阻止首次打开。这是正常现象，解决很简单：</p>
+        <p><strong>方法一（推荐）</strong>：在 Finder 中 <strong>右键</strong>（或按住 Ctrl 点击）<code>PulsarPeek.app</code> → 选择 <strong>打开</strong> → 在弹出的确认框点击 <strong>打开</strong>。以后即可正常双击启动。</p>
+        <p><strong>方法二</strong>：系统设置 → 隐私与安全性 → 下滑到安全性区域 → 找到 "PulsarPeek" 被阻止的提示 → 点击 <strong>仍要打开</strong> → 输入密码确认。</p>
+        <div class="tip">✅ 仅首次需要，以后正常双击打开即可</div>
+      </div>
     </div>
   </div>
 
