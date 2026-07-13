@@ -30,6 +30,14 @@ Runs as a native macOS desktop application — no browser needed, data cached lo
 
 [**Download PulsarPeek_v2.dmg**](https://github.com/seathunder421/PulsarPeek/raw/main/PulsarPeek_v2.dmg) — ~16 MB
 
+---
+
+## 🔗 Links
+
+- **GitHub**: [github.com/seathunder421/PulsarPeek](https://github.com/seathunder421/PulsarPeek)
+- **Data Source**: [ATNF Pulsar Catalogue](https://www.atnf.csiro.au/research/pulsar/psrcat/)
+- **Contact**: [seathunderai@gmail.com](mailto:seathunderai@gmail.com)
+
 ### 📦 Install
 
 1. Double-click the downloaded `PulsarPeek_v2.dmg`
@@ -43,12 +51,6 @@ Runs as a native macOS desktop application — no browser needed, data cached lo
 Alternatively: System Settings → Privacy & Security → scroll down to Security → find "PulsarPeek was blocked" → click **Open Anyway** → enter your password.
 
 ---
-
-## 🔗 Links
-
-- **GitHub**: [github.com/seathunder421/PulsarPeek](https://github.com/seathunder421/PulsarPeek)
-- **Data Source**: [ATNF Pulsar Catalogue](https://www.atnf.csiro.au/research/pulsar/psrcat/)
-- **Contact**: [seathunderai@gmail.com](mailto:seathunderai@gmail.com)
 
 ## 📄 License
 
