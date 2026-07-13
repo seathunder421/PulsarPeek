@@ -18,13 +18,13 @@ Built on the ATNF Pulsar Catalogue, PulsarPeek enables quick exploration of puls
 
 ## Install
 
-1. Download PulsarPeek_v1.dmg from the repo root
+1. Download PulsarPeek_v2.dmg from the repo root
 2. Open the DMG and drag to Applications
 3. Right-click → Open to bypass Gatekeeper on first launch
 
 ## Download
 
-PulsarPeek_v1.dmg
+PulsarPeek_v2.dmg
 
 ## Data Source
 
